@@ -17,6 +17,8 @@ body {
   font-size: 3.2em;
   background-color: var(--dark-purple);
   letter-spacing: 4px;
+  overflow: hidden;
+  text-align: center;
 }
 h2 {
   color: var(--mint-green);
@@ -47,6 +49,7 @@ h2 {
   left: 0;
   bottom: -1.2em;
   font-size: 0.5em;
+  opacity: 0.6;
 }
 .countdown #day::before {
   content: 'days';
