@@ -1,0 +1,62 @@
+:root {
+  --dark-purple: #0d0221ff;
+  --federal-blue: #0f084bff;
+  --marian-blue: #26408bff;
+  --light-blue: #a6cfd5ff;
+  --mint-green: #c2e7d9ff;
+}
+
+body {
+  display: flex;
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  font-family: 'Six Caps', sans-serif;
+  font-size: 3.2em;
+  background-color: var(--dark-purple);
+  letter-spacing: 4px;
+}
+h2 {
+  color: var(--mint-green);
+
+}
+.year {
+  color: var(--mint-green);
+  font-size: 4em;
+  line-height: 1.1;
+}
+.countdown {
+  display: flex;
+  background-color: var(--federal-blue);
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  font-size: 1.2em;
+
+}
+.countdown div {
+  color: var(--light-blue);
+  position: relative;
+}
+.countdown div::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -1.2em;
+  font-size: 0.5em;
+}
+.countdown #day::before {
+  content: 'days';
+}
+.countdown #hour::before {
+  content: 'Hour';
+}
+.countdown #minute::before {
+  content: 'Min';
+}
+.countdown #second::before {
+  content: 'Sec';
+}
